@@ -255,7 +255,11 @@
 						<div class="destination item">
 							<div class="destination_image">
 								<img src="{{baseUrl}}/{{dest.img}}" alt="">
+
+								{% if dest.offer %}
 								<div class="spec_offer text-center"><a href="{% static '#' %}">Special Offer</a></div>
+								{% endif %}
+
 							</div>
 							<div class="destination_content">
 								<div class="destination_title"><a href="{% static 'destinations.html' %}">{{dest.name}}</a></div>
@@ -265,66 +269,6 @@
 						</div>
 						{%  endfor %}
 
-						<!--
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="{% static '{{ dest2.img }}' %}" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="{% static 'destinations.html' %}">{{dest2.name}}</a></div>
-								<div class="destination_subtitle"><p>{{dest2.desc}}</p></div>
-								<div class="destination_price">From ${{dest2.price}}</div>
-							</div>
-						</div>
-
-						
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="{% static '{{ dest3.img }}' %}" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="{% static 'destinations.html' %}">{{dest3.name}}</a></div>
-								<div class="destination_subtitle"><p>{{dest3.desc}}</p></div>
-								<div class="destination_price">From ${{dest3.price}}</div>
-							</div>
-						</div>
-
-							Destination 
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="{% static 'images/destination_4.jpg' %}" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="{% static 'destinations.html' %}">Paris</a></div>
-								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
-								<div class="destination_price">From $679</div>
-							</div>
-						</div>
-
-						
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="{% static 'images/destination_5.jpg' %}" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="{% static 'destinations.html' %}">Phi Phi Island</a></div>
-								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
-								<div class="destination_price">From $679</div>
-							</div>
-						</div>
-
-						
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="{% static 'images/destination_6.jpg' %}" alt="">
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="{% static 'destinations.html' %}">Mykonos</a></div>
-								<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
-								<div class="destination_price">From $679</div>
-							</div>
-						</div>
-					-->
 					</div>
 				</div>
 			</div>
